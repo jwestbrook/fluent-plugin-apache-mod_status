@@ -41,7 +41,11 @@ class Fluent::ApacheModStatus < Fluent::Input
 				values = item.split(": ")
 				values[0].downcase!
 				values[0].gsub!(/ /,"_")
-				record[values[0]] = values[1]
+				if values[1].match(/[^A-z]+/)
+					record[values[0]] = values[1].to_f
+				else
+					record[values[0]] = values[1]
+				end
 			end
 		end
 		
