@@ -1,8 +1,6 @@
 # Fluent::Plugin::Apache::ModStatus
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/fluent/plugin/apache/mod_status`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Collect Apache stats from the mod_status Module
 
 ## Installation
 
@@ -26,7 +24,7 @@ or
 	tag						apache.server_status
 	refresh_interval        30
 </source>
-
+```
 
 ### Record Format
 
