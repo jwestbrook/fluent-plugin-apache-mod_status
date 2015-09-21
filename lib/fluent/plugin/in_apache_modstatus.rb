@@ -16,6 +16,10 @@ class Fluent::ApacheModStatus < Fluent::Input
 		require 'uri'
 	end
 
+	def valid_float(value)
+		!!Float(value) rescue false
+	end
+
 	def start
 		super
 		@watcher = Thread.new(&method(:run))
@@ -29,7 +33,7 @@ class Fluent::ApacheModStatus < Fluent::Input
 	end
 
 	def output
-		
+
 		record = {}
 
 		page_content = Net::HTTP.get(URI.parse(@url))
@@ -41,7 +45,7 @@ class Fluent::ApacheModStatus < Fluent::Input
 				values = item.split(": ")
 				values[0].downcase!
 				values[0].gsub!(/ /,"_")
-				if values[1].match(/[^A-z]+/)
+				if valid_float(values[1])
 					record[values[0]] = values[1].to_f
 				else
 					record[values[0]] = values[1]
