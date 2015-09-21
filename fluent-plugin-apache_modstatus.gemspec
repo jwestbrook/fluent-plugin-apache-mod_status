@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["jwestbrook@gmail.com"]
 
   spec.summary       = %q{Gather the status from the Apache mod_status Module}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/jwestbrook/fluent-plugin-apache_modstatus"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
