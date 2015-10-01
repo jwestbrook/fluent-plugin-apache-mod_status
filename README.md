@@ -5,12 +5,12 @@ Collect Apache stats from the mod_status Module
 ## Installation
 
 ```ruby
-fluent-gem install fluent-plugin-diskusage
+fluent-gem install fluent-plugin-apache_modstatus
 ```
 or
 
 ```ruby
-/usr/lib64/fluent/ruby/bin/fluent-gem install fluent-plugin-diskusage
+/usr/lib64/fluent/ruby/bin/fluent-gem install fluent-plugin-apache_modstatus
 ```
 
 ## Usage
