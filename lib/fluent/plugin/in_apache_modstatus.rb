@@ -1,3 +1,4 @@
+require 'fluent/input'
 class Fluent::ApacheModStatus < Fluent::Input
 	Fluent::Plugin.register_input('apache_modstatus',self)
 
