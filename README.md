@@ -55,7 +55,18 @@ Your record format might vary depending on what extensions and options are turne
 	"bytespersec"                  => "96227.8"
 	"bytesperreq"                  => "37743.9"
 	"busyworkers"                  => "35"
-	"idleworkers"                  => "3"
+	"idleworkers"                  => "3",
+	"scoreboard_count_wait"        => "7",
+	"scoreboard_count_start"       => "0",
+	"scoreboard_count_read"        => "1",
+	"scoreboard_count_reply"       => "8",
+	"scoreboard_count_keepalive"   => "5",
+	"scoreboard_count_dns"         => "0",
+	"scoreboard_count_closing"     => "2",
+	"scoreboard_count_log"         => "0",
+	"scoreboard_count_graceful"    => "0",
+	"scoreboard_count_cleanup"     => "0",
+	"scoreboard_count_openslot"    => "233"	
 ```
 
 ## Contributing
